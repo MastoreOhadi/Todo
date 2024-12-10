@@ -1,0 +1,45 @@
+/* src/app/todo-list/todo-list.component.scss */
+
+.todo-list {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list input[type="text"] {
+  width: calc(100% - 50px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.todo-list button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list button:hover {
+  background-color: #0056b3;
+}
+
+.filters button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background-color: #007bff;
+  color: white;
+}

@@ -1,0 +1,29 @@
+<div class="todo-item">
+  <input *ngIf="isEditing"
+         [(ngModel)]="editedTaskTitle"
+         (blur)="editTaskTitle(editedTaskTitle)"
+         (keyup.enter)="onSaveEdit()" />
+
+  <span *ngIf="!isEditing"
+        (click)="onEdit()">{{ task.title }}</span>
+
+  <button mat-raised-button
+          color="warn"
+          (click)="onDelete()">Delete</button>
+
+  <button mat-raised-button
+          color="primary"
+          (click)="onToggleCompletion()">
+    {{ task.completed ? 'Unmark' : 'Complete' }}
+  </button>
+
+  <button *ngIf="!isEditing"
+          mat-raised-button
+          color="accent"
+          (click)="onEdit()">Edit</button>
+
+  <button *ngIf="isEditing"
+          mat-raised-button
+          color="accent"
+          (click)="onSaveEdit()">Save</button>
+</div>

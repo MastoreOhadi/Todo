@@ -1,0 +1,12 @@
+.dashboard-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.dashboard-options {
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+}
